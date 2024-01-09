@@ -9,15 +9,16 @@ A restaurant homepage created dynamically (entirely with JavaScript)
 
 # Links
 
--[Assignment Page (DATE)]()
+-[Assignment Page (Jan '24)](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
 
--[Finished Project]()
+-[Finished Project](https://erreurdesyntaxe.github.io/full-stack-restaurant/)
 
 # Built With
 
 -HTML  
 -CSS  
 -JavaScript  
+-webpack  
 
 # Notable Features
 
