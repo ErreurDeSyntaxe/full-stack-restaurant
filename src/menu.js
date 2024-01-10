@@ -1,3 +1,11 @@
+import Poutine from "./img/poutine.png";
+import Tourtiere from "./img/tourtiere.png";
+import RoomWater from "./img/just-water.png";
+import ColdWater from "./img/ice-water.png";
+import WarmWater from "./img/warm-water.png";
+import ExtraCheese from "./img/extra-cheese.png";
+import ExtraGravy from "./img/extra-gravy.png";
+
 const buildMenu = () => {
     const menuContent = document.querySelector("#content");
 
@@ -15,21 +23,21 @@ const buildMenu = () => {
     // DISHES SECTION OF THE MENU TAB
     const dishesDiv = document.createElement("div");
     const dishesHeader = document.createElement("h2");
-    const imgPoutine = document.createElement("img");
+    const imgPoutine = new Image();
+    imgPoutine.src = Poutine;
     const smallPoutine = document.createElement("div");
     const largePoutine = document.createElement("div");
-    const imgTourtiere = document.createElement("img");
+    const imgTourtiere = new Image();
+    imgTourtiere.src = Tourtiere;
     const smallTourtiere = document.createElement("div");
     const largeTourtiere = document.createElement("div");
 
     dishesDiv.setAttribute("id", "dishes");
     imgPoutine.classList.add("wide-img");
-    // imgPoutine.setAttribute("src", "/home/repos/top-full-stack/restaurant/src/img/poutine.png");
     imgPoutine.setAttribute("alt", "An authentic Quebec poutine");
     smallPoutine.classList.add("menu-item");
     largePoutine.classList.add("menu-item");
     imgTourtiere.classList.add("wide-img");
-    // imgTourtiere.setAttribute("src", "./src/img/tourtiere.png");
     imgTourtiere.setAttribute("alt", "An authentic Quebec meat pie");
     smallTourtiere.classList.add("menu-item");
     largeTourtiere.classList.add("menu-item");
@@ -56,25 +64,25 @@ const buildMenu = () => {
     // BEVERAGE SECTION OF THE MENU TAB
     const beverageDiv = document.createElement("div");
     const beverageHeader = document.createElement("h2");
-    const imgRoomWater = document.createElement("img");
+    const imgRoomWater = new Image();
+    imgRoomWater.src = RoomWater;
     const roomWater = document.createElement("div");
-    const imgColdWater = document.createElement("img");
+    const imgColdWater = new Image();
+    imgColdWater.src = ColdWater;
     const coldWater = document.createElement("div");
-    const imgWarmWater = document.createElement("img");
+    const imgWarmWater = new Image();
+    imgWarmWater.src = WarmWater;
     const warmWater = document.createElement("div");
 
     imgRoomWater.classList.add("tall-img");
-    // imgRoomWater.setAttribute("src", "");
     imgRoomWater.setAttribute("alt", "A glass of room-temperature water");
     roomWater.classList.add("menu-item");
 
     imgColdWater.classList.add("tall-img");
-    // imgColdWater.setAttribute("src", "");
     imgColdWater.setAttribute("alt", "A glass of ice water");
     coldWater.classList.add("menu-item");
 
     imgWarmWater.classList.add("tall-img");
-    // imgWarmWater.setAttribute("src", "");
     imgWarmWater.setAttribute("alt", "A cup of warm water");
     warmWater.classList.add("menu-item");
 
@@ -100,17 +108,17 @@ const buildMenu = () => {
     // EXTRAS SECTION OF THE MENU TAB
     const extrasDiv = document.createElement("div");
     const extrasHeader = document.createElement("h2");
-    const imgCheese = document.createElement("img");
+    const imgCheese = new Image();
+    imgCheese.src = ExtraCheese;
     const cheese = document.createElement("div");
-    const imgGravy = document.createElement("img");
+    const imgGravy = new Image();
+    imgGravy.src = ExtraGravy;
     const gravy = document.createElement("div");
 
-    // imgCheese.setAttribute("src", "");
     imgCheese.setAttribute("alt", "A bowl of extra cheese curds");
     imgCheese.classList.add("square-img");
     cheese.classList.add("menu-item");
 
-    // imgGravy.setAttribute("src", "");
     imgGravy.setAttribute("alt", "A bowl of extra cheese curds");
     imgGravy.classList.add("square-img");
     gravy.classList.add("menu-item");
