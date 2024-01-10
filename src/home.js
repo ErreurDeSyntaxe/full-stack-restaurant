@@ -1,5 +1,3 @@
-console.log("home.js");
-
 const homeContent = document.querySelector("#content");
 
 

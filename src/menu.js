@@ -1,5 +1,3 @@
-console.log("menu.js");
-
 const menuContent = document.querySelector("#content");
 
 

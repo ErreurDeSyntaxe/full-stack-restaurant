@@ -1,5 +1,3 @@
-console.log("menu.js");
-
 const contactContent = document.querySelector("#content");
 
 
