@@ -58,7 +58,7 @@ homeLocation.setAttribute("id", "location");
 address.setAttribute("lang", "fr-CA");
 
 locationHeader.textContent = "Location";
-address.textContent = "123, René-Lévesque, Montréal, Québec, Canada";
+address.textContent = "123, Boulevard René-Lévesque, Montréal, Québec, Canada";
 
 homeLocation.appendChild(locationHeader);
 homeLocation.appendChild(address);
