@@ -1,3 +1,5 @@
+import Restaurant from "./img/restaurant.png";
+
 const buildHome = () => {
     const homeContent = document.querySelector("#content");
 
@@ -7,10 +9,14 @@ const buildHome = () => {
     const homeHeader = document.createElement("h1");
     const homeIntro = document.createElement("div");
     const homeIntroP = document.createElement("p");
+    const imgRestaurant = new Image();
+    imgRestaurant.src = Restaurant;
 
     homeDiv.setAttribute("id", "home");
     homeHeader.setAttribute("lang", "fr-CA");
     homeIntro.setAttribute("id", "intro");
+    imgRestaurant.classList.add("wide-img");
+    imgRestaurant.setAttribute("alt", "A rustic Quebec restaurant in the middle of fall");
 
     homeHeader.textContent = "Bienvenu chez Poutine & Tourtière";
     homeIntroP.textContent = "Poutine & Tourtière has the best poutine and the best tourtière in the world. These dishes, long derided, have begun to pop up on menus around the world. But don't be fooled; it will be a while before anyone outside Québec makes an authentic poutine."
@@ -18,6 +24,7 @@ const buildHome = () => {
     homeIntro.appendChild(homeIntroP);
     homeDiv.appendChild(homeHeader);
     homeDiv.appendChild(homeIntro);
+    homeDiv.appendChild(imgRestaurant);
     homeContent.appendChild(homeDiv);
 
 
