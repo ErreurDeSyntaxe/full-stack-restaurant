@@ -1,6 +1,6 @@
 console.log("home.js");
 
-const content = document.querySelector("#content");
+const homeContent = document.querySelector("#content");
 
 
 // INTRO SECTION OF HOME TAB
@@ -19,7 +19,7 @@ homeIntroP.textContent = "Poutine & Tourtière has the best poutine and the best
 homeIntro.appendChild(homeIntroP);
 homeDiv.appendChild(homeHeader);
 homeDiv.appendChild(homeIntro);
-content.appendChild(homeDiv);
+homeContent.appendChild(homeDiv);
 
 
 // HOURS SECTION OF HOME TAB
