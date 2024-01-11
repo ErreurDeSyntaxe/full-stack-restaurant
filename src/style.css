@@ -18,7 +18,28 @@ body {
     text-align: center;
 }
 
-/* HOME TAB STYLING */
+/* HOME, MENU AND CONTACT TAB STYLING */
+#tabs {
+    width: calc((3*140px) + (6*18px));
+    margin: 0 auto;
+    padding: 0;
+    & .tabButton {
+        height: 60px;
+        width: 140px;
+        background-color: #585c48;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: white;
+        border: 0;
+        border-radius: 8px;
+        margin: 0 10px;
+    }
+    & .tabButton:hover {
+        cursor: pointer;
+    }
+}
+
+/* HOME STYLING */
 #home {
     & p {
         width: 60vw;
@@ -29,7 +50,7 @@ body {
 
 /* MENU STYLING */
 .menu-item {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 /* IMAGE STYLING */
