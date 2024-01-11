@@ -11,13 +11,15 @@ const buildMenu = () => {
 
 
     // MENU TAB
-    const menu = document.createElement("div");
+    const menuDiv = document.createElement("div");
     const menuHeader = document.createElement("h1");
+
+    menuDiv.setAttribute("id", "menu");
 
     menuHeader.textContent = "Menu";
 
-    menuContent.appendChild(menu);
-    menu.appendChild(menuHeader);
+    menuContent.appendChild(menuDiv);
+    menuDiv.appendChild(menuHeader);
 
 
     // DISHES SECTION OF THE MENU TAB
@@ -58,7 +60,7 @@ const buildMenu = () => {
     dishesDiv.appendChild(largeTourtiere);
     dishesDiv.appendChild(document.createElement("br"));
 
-    menu.appendChild(dishesDiv);
+    menuDiv.appendChild(dishesDiv);
 
 
     // BEVERAGE SECTION OF THE MENU TAB
@@ -102,7 +104,7 @@ const buildMenu = () => {
     beverageDiv.appendChild(warmWater);
     beverageDiv.appendChild(document.createElement("br"));
 
-    menu.appendChild(beverageDiv);
+    menuDiv.appendChild(beverageDiv);
 
 
     // EXTRAS SECTION OF THE MENU TAB
@@ -130,10 +132,12 @@ const buildMenu = () => {
     extrasDiv.appendChild(extrasHeader);
     extrasDiv.appendChild(imgCheese);
     extrasDiv.appendChild(cheese);
+    extrasDiv.appendChild(document.createElement("br"));
     extrasDiv.appendChild(imgGravy);
     extrasDiv.appendChild(gravy);
+    extrasDiv.appendChild(document.createElement("br"));
 
-    menu.appendChild(extrasDiv);
+    menuDiv.appendChild(extrasDiv);
 };
 
 export { buildMenu };
