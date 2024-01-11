@@ -22,12 +22,16 @@ A restaurant homepage created dynamically (entirely with JavaScript)
 
 # Notable Features
 
--A feature followed by a double space  
+-Navigation tabs  
+-ES6 Modules  
 
 # Challenges
 
--A challenge followed by a double space  
+-webpack  
+-images through webpack  
 
 # Diary
 
-Something to say
+Over the course of the project, webpack's usefulness became clearer. Although it
+doesn't do much on small-scale projects like mine, it certainly adds great value
+to large projects. 
