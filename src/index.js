@@ -33,7 +33,6 @@ const buildTabs = () => {
             currentTab[1].remove();
             buildHome();
         }
-        console.log("the current tab is already 'Home'");
     });
     menuBtn.addEventListener("click", () => {
         let currentTab = content.children;
@@ -41,7 +40,6 @@ const buildTabs = () => {
             currentTab[1].remove();
             buildMenu();
         }
-        console.log("the current tab is already 'Menu'");
     });
     contactBtn.addEventListener("click", () => {
         let currentTab = content.children;
@@ -49,7 +47,6 @@ const buildTabs = () => {
             currentTab[1].remove();
             buildContact();
         }
-        console.log("the current tab is already 'Contact'");
     });
 }
 
